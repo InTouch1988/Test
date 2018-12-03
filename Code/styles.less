@@ -31,17 +31,14 @@ header {
         }
         nav {
             display: flex;
-            align-items: center;
-            a:not(:last-child) {
-                margin-right: 40px;
+            flex-flow: row wrap;
+        }
+            a {
+                margin-right: 15px;
             }
             a:last-child {
-                padding: 2.5px 15px 4.5px 14px;
-                background-color: #5528ff;
-                border-radius: 5px;
-                color: #fff;
+                margin-right: 0;
             }
-        }
 }
 .contact-us {
     max-width: 1152px;
@@ -75,7 +72,7 @@ legend {
     margin-left: 20%;
     font-size: 14px;
     line-height: 16px;
-    margin-bottom: 100px;
+    margin-bottom: 68px;
     color: #c2c2c2;
 }
 .services {
@@ -117,4 +114,36 @@ legend {
             margin-right: 64px;
         }
     }
+}
+.clients {
+    margin: 0 auto 50px auto;
+    max-width: 914px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    a {
+        width: 183px;
+        height: 53px;
+        margin-bottom: 65px;
+    }
+    img {
+        display: block;
+        margin: auto;
+    }
+}
+.team {
+    margin: 0 auto 100px auto;
+    max-width: 1000px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+        .team-element {
+            max-width: 265px;
+            margin-bottom: 60px;
+            display: flex;
+            align-items: center;
+                img {
+                    margin-right: 30px;
+                }        
+        }
 }

@@ -29,16 +29,24 @@ header {
                     margin-right: 25px;
                 }
         }
-        nav {
+        nav.header-nav {
             display: flex;
             flex-flow: row wrap;
-        }
+            align-items: center;
             a {
                 margin-right: 15px;
             }
             a:last-child {
                 margin-right: 0;
             }
+            a.contact {
+                background-color: #5528ff;
+                padding: 5px 10px;
+                border-radius: 5px;
+                color: #fff;
+            }
+        }
+
 }
 .contact-us {
     max-width: 1152px;
@@ -145,5 +153,22 @@ legend {
                 img {
                     margin-right: 30px;
                 }        
+        }
+}
+footer {
+    max-width: 1181px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 20px auto;
+        nav.footer-nav {
+            display: flex;
+            align-items: center;
+                a {
+                    margin-right: 30px;
+                }
+                a:last-child {
+                    margin-right: 0;
+                }
         }
 }

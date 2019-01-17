@@ -23,11 +23,11 @@
         <script src="//megatimer.ru/get/e913f4492067184ca890abe10921f82d.js"></script>
         <p class="balance">Осталось всего 9 шт. по акции!</p>
         <section class="buttons">
-            <a href="#" class="order-cta cta">заказать со скидкой</a>
-            <a href="#" class="reviews-cta cta">смотреть отзывы</a>
+            <a href="#catalog" class="order-cta cta">заказать со скидкой</a>
+            <a href="#reviews" class="reviews-cta cta">смотреть отзывы</a>
         </section>
         <section class="about">
-            <h1>о бренде<br><strong>fitness-girl</strong></h1>
+            <h1>о бренде<br><strong class="f-girls">fitness-girl</strong></h1>
             <div class="items-block">
                 <div class="item">
                     <img src="images/canvas.png" alt="design-logo" width="64" height="64">
@@ -55,7 +55,7 @@
               </div>
             </div>
         </section>
-        <h1 class="catalog">Каталог комплектов<br>и комбенизонов<br>2018/2019</h1>
+        <h1 class="catalog" id="catalog">Каталог комплектов<br>и комбенизонов<br>2018/2019</h1>
         <main>
             <div class="main-items">
                 <div class="main-item item-1">
@@ -135,17 +135,40 @@
                 </div>
             </div>
         </main>
-        <input type="button" onclick="but1()" value="<<<Назад">
-        <input type="button" onclick="but2()" value="Вперед>>>">
+        <section class="reviews" id="reviews">
+                <p>Отзывы покупателей<br><strong class="f-girls">fitness-girl</strong></p>
+        </section>
         <div id="container">
         <ul id="slider">
-                <li><img src="images/rew-1.jpg" alt=""></li>
-                <li><img src="images/rew-2.jpg" alt=""></li>
-                <li><img src="images/rew-3.jpg" alt=""></li>
-                <li><img src="images/rew-4.jpg" alt=""></li>
-                <li><img src="images/rew-5.jpg" alt=""></li>
+                <li><img src="images/rew-1.jpg" alt="review-image" width="290" height="535"></li>
+                <li><img src="images/rew-2.jpg" alt="review-image" width="290" height="535"></li>
+                <li><img src="images/rew-3.jpg" alt="review-image" width="290" height="535"></li>
+                <li><img src="images/rew-4.jpg" alt="review-image" width="290" height="535"></li>
+                <li><img src="images/rew-5.jpg" alt="review-image" width="290" height="535"></li>
+                <li><img src="images/rew-6.jpg" alt="review-image" width="290" height="535"></li>
+                <li><img src="images/rew-7.jpg" alt="review-image" width="290" height="535"></li>
         </ul>
+        <div class="slide-arrow back-arrow" onclick="but1()"></div>
+        <div class="slide-arrow forward-arrow" onclick="but2()"></div>
         </div>
+        <section class="delivery">
+                <h2>Доставка и оплата</h2>
+                <div class="delivery-cont">
+                        <div class="delivery-item">
+                                <img src="images/deliver.png" alt="" width="124" height="114">
+                                <p>Доставка почтой в течение 1-5 рабочих дней</p>
+                        </div>
+                        <div class="delivery-item">
+                                <img src="images/predopl.png" alt="" width="124" height="114">
+                                <p>Никаких предоплат! Оплата осуществляется непосредственно по факту получения заказа</p>
+                        </div>
+                        <div class="delivery-item">
+                                <img src="images/otkaz.png" alt="" width="124" height="114">
+                                <p>Вы вправе отказаться от покупки в течение 14 дней с момента получения заказа, независимо от причины возврата</p>
+                        </div>
+                </div>
+        </section>
+        <a href="#" class="order-cta cta">заказать со скидкой</a>
     </div>
     <script type="text/javascript">
         var list = document.getElementById("slider");
@@ -157,7 +180,7 @@
         b = list.lastElementChild;
         list.insertBefore(b, list.children[0]);
         };
-         
+
         </script>
 </body>
 </html>

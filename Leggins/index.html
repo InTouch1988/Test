@@ -183,10 +183,27 @@
                                         <input type="email" placeholder="Email*" required><br>
                                 </label>
                         </div>
-                        <a href="#" class="cta">Получить бесплатно</a>
-                </div.>
+                        <a class="cta" onclick="show('block')">Получить бесплатно</a>
+                </div>
         </footer>
+        <div class="popup-wrap" id="popup-wrap" onclick="show('none')">
+                <div class="window" id="window">
+                        <p>Для заказа укажите<br> Ваши ФИО и тел.</p>
+                        <form action="" name="popup-form" method="POST">
+                                <input type="text" required name="fio" placeholder="ФИО*">
+                                <input type="tel" required name="phone" placeholder="Телефон*">
+                                <input type="submit" id="submit" value="Заказать со скидкой">
+                                <div class="close"></div>      
+                        </form>
+                </div>
+        </div>    
     </div>
+    <script>
+            function show(state) {
+                    document.getElementById('window').style.display = state;
+                    document.getElementById('popup-wrap').style.display = state;
+            }
+    </script>
     <script type="text/javascript">
         var list = document.getElementById("slider");
         function but2(){

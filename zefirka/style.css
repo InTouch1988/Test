@@ -37,7 +37,7 @@ menu div {
 menu a:last-child {
     margin-right: 0;
 }
-.top, .middle, .bottom {
+.top, .middle, .bottom, .video-block {
     max-width: 900px;
     margin: 30px auto 70px auto;
     display: flex;
@@ -164,7 +164,7 @@ input[type='submit'] {
     clear: both;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
     margin: 40px 0;
     color: #D1114A;
@@ -179,6 +179,44 @@ table {
     display: block;
     margin: 0 auto;  
 }
-.video {
-    margin-left: 50px;
+.video-block {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.video-block div {
+    margin: 15px;
+}
+.for-parents {
+    margin: 20px auto 0 auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.for-parents div {
+    position: relative;
+    margin-bottom: 40px;
+}
+.for-parents div:last-child {
+    margin-bottom: 0;
+}
+.for-parents div:not(:first-child) img {
+    border: 2px solid gray;
+}
+.for-parents div:not(:first-child)::before, 
+.for-parents div:not(:first-child)::after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    left: 7px;
+    width: 50%;
+    height: 10px;
+    bottom: 15px;
+    box-shadow: 0 7px 10px 1px rgb(97, 95, 95);
+    transform: rotate(-3deg);
+}
+.for-parents div:not(:first-child)::after {
+    right: 7px;
+    left: auto;
+    transform: rotate(3deg);
 }
